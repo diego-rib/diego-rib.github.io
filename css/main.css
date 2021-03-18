@@ -1,0 +1,26 @@
+body {
+  background-color: #e2eafc;
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.name {
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+.soft-skill {
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.hard-skill {
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+strong {
+  font-size: 1.2em;
+  font-style: italic;
+}
