@@ -2,12 +2,29 @@ body {
   background-color: #e2eafc;
 }
 
+.index {
+  text-align: center;
+}
+
+.index li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 5px 30px;
+}
+
+.index a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
 .description {
   font-family: 'Montserrat', sans-serif;
 }
 
 .name {
   font-family: 'Shippori Mincho B1', serif;
+  text-align: center;
 }
 
 .soft-skill {
@@ -23,4 +40,18 @@ body {
 strong {
   font-size: 1.2em;
   font-style: italic;
+}
+
+.profile-pic {
+  float: left;
+}
+
+.about-me {
+  float: left;
+  width: 450px;
+  padding-left: 100px;
+}
+
+.adjust-floating {
+  clear: both;
 }
