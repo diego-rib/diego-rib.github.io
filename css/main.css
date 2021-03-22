@@ -7,8 +7,9 @@ body {
   background-color: #e2eafc;
 }
 
-h1 {
-  text-align: center;
+strong {
+  font-size: 1.2em;
+  font-style: italic;
 }
 
 .index {
@@ -37,10 +38,6 @@ h1 {
   color: #e2eafc;
 }
 
-.description {
-  font-family: 'Montserrat', sans-serif;
-}
-
 .name {
   font-family: 'Shippori Mincho B1', serif;
   text-align: center;
@@ -48,23 +45,21 @@ h1 {
   font-size: 1.5em;
 }
 
-.soft-skill {
-  font-size: 1.2em;
-  line-height: 1.3em;
-}
-
-.hard-skill {
-  font-size: 1.1em;
-  line-height: 1.4em;
-}
-
-strong {
-  font-size: 1.2em;
-  font-style: italic;
+.description-pic-wrapper {
+  text-align: center;
+  margin: 0;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .profile-pic {
   display: inline-block;
+}
+
+#picture {
+  padding: 40px;
+  background-color: darkgrey;
+  width: 250px;
 }
 
 .about-me {
@@ -73,15 +68,7 @@ strong {
   line-height: 1.7em;
   font-size: 1.1em;
   text-align: left;
-  margin-left: 40px;
   vertical-align: top;
-}
-
-.description-pic-wrapper {
-  text-align: center;
-  margin: 0;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 #about-title {
@@ -93,8 +80,9 @@ strong {
   margin-right: 0;
 }
 
-.adjust-floating {
-  clear: both;
+.description {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 40px;
 }
 
 .skill-list {
@@ -108,15 +96,19 @@ strong {
   display: block;
 }
 
+.soft-skill {
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.hard-skill {
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
 #skills {
   margin: 25px;
   font-size: 1.8em;
-}
-
-#picture {
-  padding: 40px;
-  background-color: darkgrey;
-  width: 250px;
 }
 
 .links-bottom {
