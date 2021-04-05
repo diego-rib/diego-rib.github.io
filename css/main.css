@@ -9,12 +9,11 @@ body {
 
 strong {
   font-size: 1.2em;
-  font-style: italic;
 }
 
 .index {
   text-align: center;
-  padding: 10px 0px;
+  padding: 13px 0px;
   background-color: darkgrey;
 }
 
@@ -33,9 +32,7 @@ strong {
 }
 
 .index a:hover {
-  text-decoration: none;
-  background-color: black;
-  color: #e2eafc;
+  text-decoration: underline;
 }
 
 .name {
@@ -106,12 +103,35 @@ strong {
   line-height: 1.4em;
 }
 
-#skills {
-  margin: 25px;
-  font-size: 1.8em;
+#skill-list-title {
+  margin: 40px;
+  margin-top: 150px;
+  font-size: 2em;
 }
 
-.links-bottom {
+#projects-title {
+  font-size: 2em;
+  margin: 40px;
+  margin-top: 150px;
+}
+
+.projects {
+  list-style: none;
   text-align: center;
-  padding: 25px;
+  margin-top: 50px;
+}
+
+.projects ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  padding: 10px 15px;
+  margin: 10px 15px;
+}
+
+.projects ul li a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 1.4em;
 }
