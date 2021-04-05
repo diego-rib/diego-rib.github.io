@@ -1,0 +1,121 @@
+body {
+  background: rgb(253, 251, 251);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-color: green;
+}
+
+#titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.navigation-bar {
+  width: 100%;
+  text-align: center;
+}
+
+.navigation-bar ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navigation-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  padding: 8px 20px;
+  margin: 2px 10px;
+}
+
+#perfil {
+  padding-top: 130px;
+  float: left;
+}
+
+#minha_foto {
+  display: block;
+  margin-left: 250px;
+}
+
+#linkedin {
+  display: block;
+  padding-top: 10px;
+  padding-left: 327px;
+}
+
+#licoes_trybe {
+  float: left;
+  margin-top: 30px;
+  margin-left: 190px;
+}
+
+#licoes {
+  padding-top: 120px;
+  margin-left: 210px;
+  font-size: 1.3em;
+}
+
+table {
+  margin: 0;
+  margin-left: 50px;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  margin-left: 50px;
+}
+
+th , td {
+  border: 3px solid black;
+  padding-right: 20px;
+}
+
+#aprendizado {
+  padding: 110px 50px;
+  margin: 0 10%;
+}
+
+#aprendizado h2 {
+  text-align: center;
+}
+
+p {
+  line-height: 25px;
+}
+
+.lado-esquerdo {
+  float: left;
+  width: 40%;
+}
+
+.lado-direito {
+  float: right;
+  width: 40%;
+}
+
+.clear-float {
+  clear: both;
+}
+
+#rodape {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#texto-rodape {
+  display: inline-block;
+  font-size: 1.1em;
+}
