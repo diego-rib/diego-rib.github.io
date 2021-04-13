@@ -62,7 +62,7 @@ main div {
 }
 
 #color-palette {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   width: fit-content;
   padding: 5px;
 }
@@ -83,4 +83,24 @@ main div {
 #generate-board , #board-size , #clear-board {
   padding: 5px 10px;
   margin-top: 30px;
+}
+
+#footer {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(0 , 0 , 0, 0.2);
+  width: 100%;
+  margin: 20px auto 0 auto;
+}
+
+#footer a {
+  text-decoration: underline;
+  color: black;
+  display: inline-block;
+  margin: 0px 20px;
 }
