@@ -37,7 +37,7 @@ function addBorder(event) {
 btnsBorder.addEventListener('click', addBorder);
 
 function showMiniatureImage(event) {
-  newImg.src = event.target.src;
+  newImg.src = `images/${event.target.className}.png`;
 }
 
 miniatureMemes.addEventListener('click', showMiniatureImage);
