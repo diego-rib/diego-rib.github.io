@@ -87,7 +87,7 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
-.skill-container {
+#skill-container {
   display: flex;
   flex-flow: column;
   margin-top: 50px;
