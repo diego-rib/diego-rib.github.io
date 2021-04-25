@@ -56,7 +56,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 800px;
+  max-width: 80%;
   margin: 30px auto 0;
   flex-wrap: wrap;
 }
