@@ -3,10 +3,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 #cabecalho {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,21 +23,18 @@ body {
 
 #titulo {
   text-align: center;
-  margin-bottom: 20px;
+  padding: 10px 0 20px 0;
+  margin: 0;
   color: white;
 }
 
 .navigation-bar {
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.navigation-bar ul li {
-  list-style: none;
-  display: inline-block;
-}
-
-.navigation-bar ul li a {
+.navigation-bar a {
   text-decoration: none;
   color: white;
   font-size: 1.3em;
@@ -38,75 +42,72 @@ body {
   margin: 2px 10px;
 }
 
+.perfil-licoes-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
 #perfil {
-  padding-top: 130px;
-  float: left;
-}
-
-#minha_foto {
-  display: block;
-  margin-left: 250px;
-}
-
-#linkedin {
-  display: block;
-  padding-top: 10px;
-  padding-left: 327px;
-}
-
-#licoes_trybe {
-  float: left;
-  margin-top: 30px;
-  margin-left: 190px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 45%;
 }
 
 #licoes {
-  padding-top: 120px;
-  margin-left: 210px;
+  text-align: center;
   font-size: 1.3em;
+  max-width: 45%;
+}
+
+#licoes_trybe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 table {
   margin: 0;
-  margin-left: 50px;
   border-collapse: collapse;
 }
 
 th {
   text-align: left;
-  margin-left: 50px;
 }
 
-th , td {
+th,
+td {
   border: 3px solid black;
   padding-right: 20px;
 }
 
 #aprendizado {
-  padding: 110px 50px;
-  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 110px auto;
+  max-width: 80%;
 }
 
-#aprendizado h2 {
-  text-align: center;
+#aprendizado div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#aprendizado div article,
+#aprendizado div aside {
+  flex-basis: 45%;
+  flex-grow: 0;
 }
 
 p {
   line-height: 25px;
-}
-
-.lado-esquerdo {
-  float: left;
-  width: 40%;
-}
-
-.lado-direito {
-  float: right;
-  width: 40%;
-}
-
-.clear-float {
-  clear: both;
 }
 
 #footer {

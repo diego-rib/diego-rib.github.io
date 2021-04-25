@@ -1,19 +1,23 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(-45deg, #C1EEFF, #C3C3E6, #FFDBDA, #D1C8E1);
+  background: linear-gradient(-45deg, #c1eeff, #c3c3e6, #ffdbda, #d1c8e1);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
@@ -21,6 +25,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  flex-grow: 1;
 }
 
 main div {
@@ -80,7 +85,9 @@ main div {
   margin-right: 10px;
 }
 
-#generate-board , #board-size , #clear-board {
+#generate-board,
+#board-size,
+#clear-board {
   padding: 5px 10px;
   margin-top: 30px;
 }
@@ -89,13 +96,10 @@ main div {
   font-size: 18px;
   font-weight: 600;
   padding: 10px 0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   text-align: center;
-  background-color: rgba(0 , 0 , 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
-  margin: 20px auto 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 #footer a {
