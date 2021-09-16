@@ -12,79 +12,169 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet"> 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     
-    <title>Diego Ribeiro</title>
+    <title>Diego Ribeiro - Desenvolvedor Frontend</title>
 
 </head>
 <body>
-    <header class="nav-menu">
-        <nav class="nav">
-            <a href="#about-section">Perfil</a>
-            <a href="#skill-container">Competências</a>
-            <a href="#projects-title">Projetos</a>
-        </nav>
-    </header>
-    <main>
-        <section id="about-section">
-            <div class="name">
-                <h2 id="perfil">Diego Henrique Ribeiro Marçal</h1>
-            </div>
-            
-            <div class="perfil-container">
-              <div class="profile-pic">
-                  <img id="picture" src="images/20210317_181422.jpg" alt="Foto do dono do portifólio, Diego">
-              </div>
-              
-              <div class="about-me">
-                  <h2 id="about-title"><em>Sobre mim</em></h2>
-                  <p class="description">Tenho 20 anos, sou <strong>brasileiro</strong>, moro em <strong>São João del Rei - Minas Gerais</strong>.<br><br>
-                  Sou fascinado por resolver problemas reais com a tecnologia, estudar é um dos meus passatempos além de amar esportes.</p>
-              </div>
-            </div>
-        </section>
+  <header class="nav-menu">
+    <nav class="nav">
+      <a href="#about-section">Perfil</a>
+      <a href="#projects-section">Projetos</a>
+      <a href="#contact-section">Contato</a>
+    </nav>
+  </header>
 
-        <section id="skill-container">
-            <h2 id="skills-title"><em>Competências</em></h2>
-            <section class="skills-wrapper">
-                <div class="hard-skills">
-                    <h3 class="skill-sub-title">Hard Skills</h3>
-                    <p>Bash</p>
-                    <p>Git</p>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                </div>
-                <div class="soft-skills">
-                    <h3 class="skill-sub-title">Soft Skills</h3>
-                    <p>Auto-didata</p>
-                    <p>Aprendizado rápido</p>
-                    <p>Tolerante</p>
-                    <p>Calmo</p>
-                </div>
-            </section>
-        </section>
-    
-        <section class="projects-section">
-            <h2 id="projects-title">Projetos</h2>
-            <div class="projects">
-                <a href="projects/lessons-learned/index.html" target="_blank">Lessons Learned</a>
-                <a href="projects/pixel-art/index.html" target="_blank">Pixel Art</a>
-                <a href="projects/todo-list/index.html" target="_blank">To Do List</a>
-                <a href="projects/meme-generator/index.html" target="_blank">Meme Generator</a>
-                <a href="projects/guess-color/index.html" target="_blank">Guess Color</a>
-                <a href="projects/trybewarts/index.html" target="_blank">Trybewarts</a>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <span>&#169; All rights reserved | Diego Ribeiro</span>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/diego-h-ribeiro-m/" class="linkedin">LinkedIn</a>
-            <a href="https://github.com/diego-rib" class="github">GitHub</a>
+  <main>
+    <section id="about-section">
+      <div class="nav-placeholder"></div>
+      <div class="perfil-container">
+        <div class="profile-pic">
+          <img id="picture" src="images/profile-pic.png" alt="Foto do dono do portifólio, Diego">
         </div>
-    </footer>
+        <p class="description">Olá, meu nome é Diego, moro em São João del Rei - MG.</p>
+        <p class="description">Atualmente sou estudante de Desenvolvimento Web Fullstack na Trybe.</p>
+      </div>
+    </section>
+
+    <section id="projects-section">
+      <div class="nav-placeholder"></div>
+      <div class="projects-section-container">
+        <h2 class="projects-title">Projetos</h2>
+        <div class="projects">
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="./images/projects/recipe-app-min.png"
+              alt="Aplicativo de receitas com foco em mobile"
+            >
+            <a
+              href="https://recipe-app-diego-rib.vercel.app/"
+              target="_blank"
+              class="projects-visit-button"
+            >
+              Visitar site
+            </a>
+            <a
+              href="https://github.com/diego-rib/recipe-app"
+              target="_blank"
+              class="projects-visit-button git-repo"
+            >
+              Github
+            </a>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="./images/projects/pixel-art-min.png"
+              alt="Jogo de pixel art, onde se pinta os pixels da tela para fazer desenhos"
+            >
+            <a
+              href="https://diego-rib.github.io/pixels-art/"
+              target="_blank"
+              class="projects-visit-button"
+            >
+              Visitar site
+            </a>
+            <a
+              href="https://github.com/diego-rib/pixels-art"
+              target="_blank"
+              class="projects-visit-button git-repo"
+            >
+              Github
+            </a>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="./images/projects/todo-list-min.png"
+              alt="Lista de tarefas ou afazeres que oferece botões de ação para interação do usuário"
+            >
+            <a
+              href="https://diego-rib.github.io/todo-list/"
+              target="_blank"
+              class="projects-visit-button"
+            >
+              Visitar site
+            </a>
+            <a
+              href="https://github.com/diego-rib/todo-list"
+              target="_blank"
+              class="projects-visit-button git-repo"
+            >
+              Github
+            </a>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="./images/projects/online-store-min.png"
+              alt="E-commerce feito utilizando a API do Mercado Livre"
+            >
+            <a
+              href="https://online-store-rho.vercel.app/"
+              target="_blank"
+              class="projects-visit-button"
+            >
+              Visitar site
+            </a>
+            <a
+              href="https://github.com/diego-rib/frontend-online-store"
+              target="_blank"
+              class="projects-visit-button git-repo"
+            >
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section">
+      <div class="nav-placeholder"></div>
+      <div class="contact-section-container">
+        <h2 class="contact-title">Fale comigo:</h2>
+        <a
+          href="mailto:dihrm2001@gmail.com"
+          target="_blank"
+          class="contact-item"
+        >
+          <i class="fa fa-envelope contact-icon"></i>
+          dihrm2001@gmail.com
+        </a>
+        <a
+          href="tel:+5532991247203"
+          target="_blank"
+          class="contact-item"
+        >
+          <i class="fa fa-phone contact-icon"></i>
+          32991247203
+        </a>
+        <a
+          href="https://www.linkedin.com/in/diego-rib/"
+          target="_blank"
+          class="contact-item"
+        >
+          <i class="fa fa-linkedin contact-icon"></i>
+          https://www.linkedin.com/in/diego-rib/
+        </a>
+        <a
+          href="https://github.com/diego-rib"
+          target="_blank"
+          class="contact-item"
+        >
+          <i class="fa fa-github contact-icon"></i>
+          https://github.com/diego-rib
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <span>Diego Ribeiro &#169; 2021</span>
+  </footer>
 
 </body>
 </html>
