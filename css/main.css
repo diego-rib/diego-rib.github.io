@@ -1,35 +1,35 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background-color: #dcedff;
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-strong {
-  font-size: 1.2em;
+  width: 100%;
 }
 
 main {
-  max-width: 80%;
+  width: 100%;
   margin: 0 auto;
-  flex-grow: 1;
 }
 
 .nav-menu {
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: #222;
+  position: fixed;
+  height: 50px;
+  width: 100%;
 }
 
 .nav {
   display: flex;
   margin: 0;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 50%;
 }
 
@@ -45,28 +45,46 @@ main {
   text-decoration: underline;
 }
 
-.name {
-  font-family: 'Shippori Mincho B1', serif;
-  text-align: center;
-  margin: 50px;
-  font-size: 1.7em;
+.nav-placeholder {
+  height: 50px;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(/images/about-background.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }
 
 .perfil-container {
+  background-color: rgba(51, 51, 51, 0.616);
   display: flex;
-  justify-content: space-around;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
-  max-width: 80%;
-  margin: 30px auto 0;
+  width: 100%;
+  flex-grow: 1;
+  margin: 0 auto;
   flex-wrap: wrap;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 5vh;
 }
 
 #picture {
-  padding: 5px;
   background-color: rgba(50, 50, 50, 1);
-  width: 250px;
-  border-radius: 5px;
-  margin: 0 10px;
+  border-radius: 50%;
+  object-fit: contain;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 30px;
+  padding: 5px;
 }
 
 .about-me {
@@ -86,75 +104,118 @@ main {
 }
 
 .description {
-  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  width: 95%;
 }
 
-#skill-container {
-  display: flex;
-  flex-flow: column;
-  margin-top: 50px;
-  padding: 0;
-  align-items: center;
-}
-
-.skills-wrapper {
-  font-size: 1.4em;
-  display: flex;
+#projects-section {
+  background-color: #333;
   width: 100%;
-  justify-content: space-around;
-}
-
-.hard-skills,
-.soft-skills {
+  min-height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
 }
 
-#skills-title {
-  margin: 100px auto 50px;
-  font-size: 2.5em;
+.projects-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
 }
 
-.skill-sub-title {
-  font-size: 1.4em;
-  font-weight: 700;
-  margin: 10px 0 40px;
-}
-
-#projects-title {
-  font-size: 2.5em;
-  margin: 110px 0 40px;
+.projects-title {
+  font-size: 2.7em;
   text-align: center;
 }
 
 .projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 90%;
+  margin: 100px auto;
 }
 
-.projects a {
-  background-color: rgba(255, 255, 255, 0.8);
+.project-card {
+  width: 350px;
+  background-color: #fff;
+  padding: 1em 1.5em;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 2px 2px 0px 1px #777;
+}
+
+.projects-visit-button {
+  background-color: rgb(50, 177, 235);
   text-decoration: none;
-  color: black;
+  color: #ddd;
+  display: inline-block;
   font-size: 1.3em;
   padding: 10px 15px;
-  margin: 20px 20px;
+  margin: 0 10px 5px;
   border-radius: 10px;
-  box-shadow: 2px 2px 0px 1px rgba(50, 50, 50, 0.9);
+  box-shadow: 2px 2px 0px 1px #777;
   transition: 0.5s;
-  width: 200px;
+  width: fit-content;
   text-align: center;
 }
 
-.projects a:hover {
+.projects-visit-button:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 5px 3px black;
+  box-shadow: 2px 2px 5px 3px #444;
+}
+
+.git-repo {
+  background-color: #444;
+}
+
+.git-repo:hover {
+  box-shadow: 2px 2px 5px 3px #666;
+}
+
+#contact-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #6e6e6e;
+  color: white;
+}
+
+.contact-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin-bottom: 100px;
+}
+
+.contact-title {
+  font-size: 2.7em;
+  margin-bottom: 100px;
+}
+
+.contact-item {
+  text-decoration: none;
+  color: inherit;
+  margin: 15px 0;
+}
+
+.contact-icon {
+  font-size: 20px;
+  padding-right: 5px;
+  vertical-align: bottom;
 }
 
 #footer {
@@ -162,9 +223,8 @@ main {
   font-size: 18px;
   font-weight: 600;
   padding: 10px;
-  background-color: black;
+  background-color: #333;
   color: #fafafa;
-  margin-top: 20px;
 }
 
 #footer a {
@@ -172,9 +232,4 @@ main {
   color: #fafafa;
   display: inline-block;
   margin: 0px 20px;
-}
-
-.links {
-  display: inline-block;
-  padding-top: 10px;
 }
