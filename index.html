@@ -1,205 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&
-    display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Ribeiro | Engenheiro de Software Frontend Pleno</title>
+  <meta name="description" content="Portfólio de Diego Ribeiro, engenheiro de software frontend pleno (Vue, Nuxt, TypeScript e Flutter) de São João del-Rei - MG.">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet"> 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    
-    <title>Diego Ribeiro - Desenvolvedor Fullstack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header class="nav-menu">
-    <nav class="nav">
-      <a href="#about-section">Sobre mim</a>
-      <a href="#used-techs-section">Tecnologias</a>
-      <a href="#projects-section">Projetos</a>
-      <a href="#contact-section">Contato</a>
-    </nav>
-  </header>
+  <a class="logo" href="#home">Diego Ribeiro<span>.</span></a>
+
+  <nav class="dock" aria-label="Navegação principal">
+    <a href="#home" title="Início"><i class="fa fa-home"></i></a>
+    <a href="#projects" title="Projetos"><i class="fa fa-briefcase"></i></a>
+    <a href="#services" title="O que eu faço"><i class="fa fa-bolt"></i></a>
+    <a href="#experience" title="Experiência"><i class="fa fa-user"></i></a>
+    <a href="#stack" title="Tecnologias"><i class="fa fa-code"></i></a>
+    <a href="#contact" title="Contato"><i class="fa fa-envelope-o"></i></a>
+  </nav>
 
   <main>
-    <section id="about-section">
-      <div class="nav-placeholder"></div>
-      <div class="perfil-container">
-        <h1 class="about-me-title">Eu sou o Diego, Desenvolvedor Web Fullstack</h1>
-        <div class="profile-pic">
-          <img id="picture" src="images/profile-pic.png" alt="Foto do dono do portifólio, Diego">
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <span class="badge">Engenheiro de Software Frontend Pleno</span>
+        <h1>Código.<br>Produto.<br>Impacto.</h1>
+        <p>Construo soluções front-end escaláveis com Vue, Nuxt, TypeScript e Flutter, com foco em usabilidade, performance e Design Systems. De São João del-Rei - MG, atuando na Metha Energia.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Ver projetos <i class="fa fa-arrow-right"></i></a>
+          <a class="btn btn-secondary" href="#contact">Fale comigo</a>
         </div>
-        <div class="description-container">
-          <p class="description">Natural e residente de São João del Rei - MG, formado pela Trybe e atualmente a procura de emprego.</p>
+      </div>
+      <div class="hero-photo">
+        <img class="hero-pic" src="images/profile-pic.png" alt="Foto de Diego Ribeiro">
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <header class="section-head">
+        <div>
+          <h2>Projetos</h2>
+          <p>Uma seleção de trabalhos que definem minha abordagem.</p>
+        </div>
+        <span class="section-tag">01 — PROJETOS</span>
+      </header>
+      <div class="cards">
+        <article class="project-card project-featured">
+          <div class="featured-cover">
+            <img src="images/projects/metha-energia-banner.png" alt="Logo da Metha Energia">
+            <div class="featured-text">
+              <span class="project-tag">PLATAFORMA · WEB E MOBILE</span>
+              <h3>Metha Energia</h3>
+              <p>Ecossistema digital da Metha Energia: área do cliente, cadastro e aplicativo mobile. Projeto em que atuo como engenheiro de software frontend.</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <ul class="featured-links">
+              <li>
+                <a href="https://methaenergia.app/" target="_blank" rel="noopener">
+                  <i class="fa fa-user-circle-o"></i>
+                  <span>Área do cliente<small>methaenergia.app</small></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://cadastro.methaenergia.com.br/" target="_blank" rel="noopener">
+                  <i class="fa fa-id-card-o"></i>
+                  <span>Site de cadastro<small>cadastro.methaenergia.com.br</small></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://apps.apple.com/br/app/minha-metha/id6737350368" target="_blank" rel="noopener">
+                  <i class="fa fa-apple"></i>
+                  <span>Minha Metha — iOS<small>App Store</small></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=br.com.methaenergia.minhametha" target="_blank" rel="noopener">
+                  <i class="fa fa-android"></i>
+                  <span>Minha Metha — Android<small>Google Play</small></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="images/projects/recipe-app-min.png" alt="Aplicativo de receitas com foco em mobile">
+          <div class="project-body">
+            <span class="project-tag">APLICATIVO WEB</span>
+            <h3>Recipe App</h3>
+            <p>Aplicativo de receitas com foco em mobile.</p>
+            <div class="project-links">
+              <a href="https://recipe-app-diego-rib.vercel.app/" target="_blank" rel="noopener">Visitar site <i class="fa fa-external-link"></i></a>
+              <a href="https://github.com/diego-rib/recipe-app" target="_blank" rel="noopener">GitHub <i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="images/projects/pixel-art-min.png" alt="Jogo de pixel art">
+          <div class="project-body">
+            <span class="project-tag">JOGO</span>
+            <h3>Pixel Art</h3>
+            <p>Pinte os pixels da tela para criar seus desenhos.</p>
+            <div class="project-links">
+              <a href="https://diego-rib.github.io/pixels-art/" target="_blank" rel="noopener">Visitar site <i class="fa fa-external-link"></i></a>
+              <a href="https://github.com/diego-rib/pixels-art" target="_blank" rel="noopener">GitHub <i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="images/projects/todo-list-min.png" alt="Lista de tarefas">
+          <div class="project-body">
+            <span class="project-tag">APLICATIVO WEB</span>
+            <h3>Todo List</h3>
+            <p>Lista de tarefas com botões de ação para interação do usuário.</p>
+            <div class="project-links">
+              <a href="https://diego-rib.github.io/todo-list/" target="_blank" rel="noopener">Visitar site <i class="fa fa-external-link"></i></a>
+              <a href="https://github.com/diego-rib/todo-list" target="_blank" rel="noopener">GitHub <i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="images/projects/online-store-min.png" alt="E-commerce com a API do Mercado Livre">
+          <div class="project-body">
+            <span class="project-tag">E-COMMERCE</span>
+            <h3>Online Store</h3>
+            <p>E-commerce feito com a API do Mercado Livre.</p>
+            <div class="project-links">
+              <a href="https://online-store-rho.vercel.app/" target="_blank" rel="noopener">Visitar site <i class="fa fa-external-link"></i></a>
+              <a href="https://github.com/diego-rib/frontend-online-store" target="_blank" rel="noopener">GitHub <i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <header class="section-head">
+        <div>
+          <h2>O que eu faço</h2>
+          <p>Como posso ajudar seu time ou produto a crescer.</p>
+        </div>
+        <span class="section-tag">02 — SERVIÇOS</span>
+      </header>
+      <div class="grid-2">
+        <div class="cell">
+          <i class="fa fa-desktop"></i>
+          <h3>Front-end</h3>
+          <p>Interfaces responsivas e acessíveis, mobile-first, com Vue 2/3, Nuxt (SSR), React, TypeScript, Tailwind CSS e SCSS.</p>
+        </div>
+        <div class="cell">
+          <i class="fa fa-mobile"></i>
+          <h3>Desenvolvimento mobile</h3>
+          <p>Aplicativos com Flutter e integrações híbridas com NativeScript WebView.</p>
+        </div>
+        <div class="cell">
+          <i class="fa fa-server"></i>
+          <h3>Back-end</h3>
+          <p>APIs REST com Node.js, Express e TypeScript, autenticação com JWT e bancos MySQL e MongoDB.</p>
+        </div>
+        <div class="cell">
+          <i class="fa fa-check-square-o"></i>
+          <h3>Testes</h3>
+          <p>Código confiável, coberto por testes automatizados com Jest.</p>
+        </div>
+        <div class="cell">
+          <i class="fa fa-hand-pointer-o"></i>
+          <h3>Refinamento de UX</h3>
+          <p>Ajudo a desenhar as melhores soluções, buscando a melhor usabilidade possível dentro das limitações técnicas.</p>
+        </div>
+        <div class="cell">
+          <i class="fa fa-cubes"></i>
+          <h3>Design System e CMS</h3>
+          <p>Componentes reutilizáveis conectados ao Storyblok, padronização visual e landing pages mais rápidas de criar.</p>
+        </div>
+        <div class="cell">
+          <i class="fa fa-tachometer"></i>
+          <h3>Performance e SEO</h3>
+          <p>SEO técnico, dados estruturados e otimização de Core Web Vitals com Lighthouse.</p>
+        </div>
+        <div class="cell">
+          <i class="fa fa-sitemap"></i>
+          <h3>Arquitetura e migração</h3>
+          <p>Clean Architecture e modernização de codebases, como a migração de Nuxt 2 para Vue 3 + TypeScript.</p>
         </div>
       </div>
     </section>
 
-    <section id="used-techs-section">
-      <div class="used-techs-container">
-        <div class="nav-placeholder"></div>
-        <h1 class="used-techs-title">Tecnologias que eu utilizo:</h1>
-        <div class="used-techs">
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="git" />
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5" />
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3" />
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" />
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" />
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="jest"/>
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="redux" />
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="nodejs" />
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql" />
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="mongodb" />
-          <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" />
+    <section id="experience" class="section">
+      <header class="section-head">
+        <div>
+          <h2>Experiência e formação</h2>
+          <p>Onde eu atuei e como cheguei até aqui.</p>
+        </div>
+        <span class="section-tag">03 — TRAJETÓRIA</span>
+      </header>
+      <div class="grid-2">
+        <div class="cell cell-wide">
+          <span class="meta">MAIO 2022 — PRESENTE</span>
+          <h3>Engenheiro de Software Front-End Pleno</h3>
+          <p class="company">Metha Energia, Belo Horizonte - MG</p>
+          <ul>
+            <li>Aplicações Vue.js 2/3 (Options/Composition API) e Nuxt.js (SSR), incluindo SPAs e integrações híbridas com NativeScript WebView.</li>
+            <li>Integração com Storyblok (CMS headless), dando autonomia ao time de marketing para atualizar páginas, e componentes Vue reutilizáveis para landing pages.</li>
+            <li>Interfaces responsivas e acessíveis com Tailwind CSS e SCSS, seguindo princípios mobile-first, com estilos padronizados entre projetos.</li>
+            <li>SEO técnico (metatags, structured data) e desempenho (Core Web Vitals) medidos no Lighthouse.</li>
+            <li>Preview links no AWS Amplify para validar features antes do deploy em produção.</li>
+            <li>Participação na migração de Nuxt 2 para Vue 3 + TypeScript.</li>
+            <li>Forte envolvimento com UX/UI, priorizando o bom funcionamento do produto e o conforto do usuário final.</li>
+            <li>Desenvolvendo o aplicativo mobile da empresa em Flutter, com backend em TypeScript.</li>
+          </ul>
+        </div>
+        <div class="cell">
+          <span class="meta">2026 — 2028 (CURSANDO)</span>
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <p class="company">Tecnólogo, Universidade Cruzeiro do Sul</p>
+        </div>
+        <div class="cell">
+          <span class="meta">2021 — 2022</span>
+          <h3>Desenvolvimento Web Full Stack</h3>
+          <p class="company">Trybe, Belo Horizonte - MG</p>
         </div>
       </div>
     </section>
 
-    <section id="projects-section">
-      <div class="nav-placeholder"></div>
-      <div class="projects-section-container">
-        <h2 class="projects-title">Projetos</h2>
-        <div class="projects">
-          <div class="project-card">
-            <img
-              class="project-image"
-              src="./images/projects/recipe-app-min.png"
-              alt="Aplicativo de receitas com foco em mobile"
-            >
-            <a
-              href="https://recipe-app-diego-rib.vercel.app/"
-              target="_blank"
-              class="projects-visit-button"
-            >
-              Visitar site
-            </a>
-            <a
-              href="https://github.com/diego-rib/recipe-app"
-              target="_blank"
-              class="projects-visit-button git-repo"
-            >
-              Github
-            </a>
-          </div>
-          <div class="project-card">
-            <img
-              class="project-image"
-              src="./images/projects/pixel-art-min.png"
-              alt="Jogo de pixel art, onde se pinta os pixels da tela para fazer desenhos"
-            >
-            <a
-              href="https://diego-rib.github.io/pixels-art/"
-              target="_blank"
-              class="projects-visit-button"
-            >
-              Visitar site
-            </a>
-            <a
-              href="https://github.com/diego-rib/pixels-art"
-              target="_blank"
-              class="projects-visit-button git-repo"
-            >
-              Github
-            </a>
-          </div>
-          <div class="project-card">
-            <img
-              class="project-image"
-              src="./images/projects/todo-list-min.png"
-              alt="Lista de tarefas ou afazeres que oferece botões de ação para interação do usuário"
-            >
-            <a
-              href="https://diego-rib.github.io/todo-list/"
-              target="_blank"
-              class="projects-visit-button"
-            >
-              Visitar site
-            </a>
-            <a
-              href="https://github.com/diego-rib/todo-list"
-              target="_blank"
-              class="projects-visit-button git-repo"
-            >
-              Github
-            </a>
-          </div>
-          <div class="project-card">
-            <img
-              class="project-image"
-              src="./images/projects/online-store-min.png"
-              alt="E-commerce feito utilizando a API do Mercado Livre"
-            >
-            <a
-              href="https://online-store-rho.vercel.app/"
-              target="_blank"
-              class="projects-visit-button"
-            >
-              Visitar site
-            </a>
-            <a
-              href="https://github.com/diego-rib/frontend-online-store"
-              target="_blank"
-              class="projects-visit-button git-repo"
-            >
-              Github
-            </a>
-          </div>
+    <section id="stack" class="section">
+      <header class="section-head">
+        <div>
+          <h2>Tecnologias</h2>
+          <p>Ferramentas que eu uso para tirar ideias do papel.</p>
         </div>
+        <span class="section-tag">04 — STACK</span>
+      </header>
+      <div class="stack">
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt=""><span>Vue.js</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" alt=""><span>Nuxt.js</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt=""><span>TypeScript</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""><span>JavaScript</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt=""><span>Flutter</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt=""><span>Dart</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt=""><span>React</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt=""><span>Redux</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt=""><span>Tailwind CSS</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt=""><span>SCSS</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt=""><span>Node.js</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt=""><span>Express</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt=""><span>MySQL</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt=""><span>MongoDB</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt=""><span>AWS Amplify</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt=""><span>Git</span></div>
+        <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt=""><span>Jest</span></div>
       </div>
     </section>
 
-    <section id="contact-section">
-      <div class="nav-placeholder"></div>
-      <div class="contact-section-container">
-        <h2 class="contact-title">Fale comigo:</h2>
-        <a
-          href="mailto:dihrm2001@gmail.com"
-          target="_blank"
-          class="contact-item"
-        >
-          <i class="fa fa-envelope contact-icon"></i>
-          dihrm2001@gmail.com
-        </a>
-        <a
-          href="tel:+5532991155142"
-          target="_blank"
-          class="contact-item"
-        >
-          <i class="fa fa-phone contact-icon"></i>
-          (32) 9 9115-5142
-        </a>
-        <a
-          href="https://www.linkedin.com/in/diego-rib/"
-          target="_blank"
-          class="contact-item"
-        >
-          <i class="fa fa-linkedin contact-icon"></i>
-          https://www.linkedin.com/in/diego-rib/
-        </a>
-        <a
-          href="https://github.com/diego-rib"
-          target="_blank"
-          class="contact-item"
-        >
-          <i class="fa fa-github contact-icon"></i>
-          https://github.com/diego-rib
-        </a>
-      </div>
-      <div>
-        <h1 class="thanks-message">E muito obrigado pela visita! :)</h1>
+    <section id="contact" class="section contact">
+      <header class="section-head">
+        <div>
+          <h2>Vamos conversar?</h2>
+          <p>Aberto a novos projetos, colaborações ou um bom papo sobre tecnologia.</p>
+        </div>
+        <span class="section-tag">05 — CONTATO</span>
+      </header>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:dihrm2001@gmail.com"><i class="fa fa-envelope"></i> dihrm2001@gmail.com</a>
+        <a class="btn btn-secondary" href="tel:+5532991155142"><i class="fa fa-phone"></i> (32) 9 9115-5142</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/diego-rib/" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        <a class="btn btn-secondary" href="https://github.com/diego-rib" target="_blank" rel="noopener"><i class="fa fa-github"></i> GitHub</a>
       </div>
     </section>
   </main>
 
-  <footer id="footer">
-    <span>Diego Ribeiro &#169; 2022</span>
+  <footer>
+    <div class="footer-left">
+      <a class="footer-logo" href="#home">Diego Ribeiro<span>.</span></a>
+      <nav class="footer-links" aria-label="Redes">
+        <a href="https://github.com/diego-rib" target="_blank" rel="noopener">GITHUB</a>
+        <a href="https://www.linkedin.com/in/diego-rib/" target="_blank" rel="noopener">LINKEDIN</a>
+        <a href="mailto:dihrm2001@gmail.com">EMAIL</a>
+      </nav>
+    </div>
+    <div class="footer-right">
+      <span>&copy; 2026 PORTFÓLIO DIEGO RIBEIRO</span>
+    </div>
   </footer>
-
 </body>
 </html>
